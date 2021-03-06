@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instamojo Payment Gateway in Python</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+</style>
+  </head>
+  <body>
+      <div class="container">
+          <h1 class="text-center">
+            <br>
+              Your Payment is successful...! 
+          </h1>
+          <p>Please check your confirmation email</p>
+        <!--       <h3 class="text-center">
+            <br>
+              The details are as below:<br>
+              Payment Id: {{apayment_id}} <br>
+              Patient Name : {{apatient_name}} <br>
+              Patient Email : {{apatient_email}}<br>
+              Patient Phone : {{apatient_phone}}<br>
+              Paid Amount : {{apatient_amount}}<br>
+              Payment Data & Time : {{apatient_created}}
+          </h3> -->
+ 
+
+           <table style="width:100%">
+            <tr>
+              <th>Transanction Details</th>
+              <th colspan="2">Particulars</th>
+            </tr>
+            <tr>
+              <td>Payment Id:</td>
+              <td>{{apayment_id}}</td>
+            </tr>
+            <tr>
+              <td>Patient Name</td>
+              <td>{{apatient_name}}</td>
+            </tr>
+            <tr>
+              <td>Patient Email </td>
+              <td>{{apatient_email}}</td>
+            </tr>
+            <tr>
+              <td>Patient Phone</td>
+              <td>{{apatient_phone}}</td>
+            </tr>
+            <tr>
+              <td>Paid Amount</td>
+              <td>{{apatient_amount}}</td>
+            </tr>
+            <tr>
+              <td>Payment Date & Time</td>
+              <td>{{apatient_created}}</td>
+            </tr>
+          </table>
+          <br><br>
+          <!-- <p>Redirecting you to the home page in 5 seconds...!</p> -->
+        <!--    <script>
+         setTimeout(function(){
+            window.location.href = 'https://www.tutorialspoint.com/javascript/';
+         }, 5000);
+      </script> -->
+      </div>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</html>
