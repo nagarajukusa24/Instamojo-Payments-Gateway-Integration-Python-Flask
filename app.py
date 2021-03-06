@@ -80,9 +80,6 @@ def pay():
         buyer_name=name,
         send_email=True,
         email=email,
-        # payid = response['payment_request']['id'],
-        # redirect_url=("http://localhost:5000/success",payid=payid)
-        # redirect(url_for('/success', payid='payid'))
         redirect_url="http://localhost:5000/success"  
         )
         # print(payid)/
